@@ -1398,7 +1398,7 @@ Im schweren Modus startest du mit dem Minimum an Werten.
 &lt;label&gt;&lt;&lt;radiobutton &quot;$schwierigkeit&quot; &quot;schwer&quot;&gt;&gt; Schwer&lt;/label&gt;
 
 [[Weiter|Startwerte bestimmen]] </tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="nobr" position="725,100" size="100,100">&lt;&lt;set $schwierigkeit to &quot;normal&quot;&gt;&gt;
-&lt;&lt;set $spielBegonnen to true&gt;&gt;
+&lt;&lt;set $spielBegonnen to false&gt;&gt;
 &lt;&lt;set $wodeman to false&gt;&gt;
 &lt;&lt;set $kampfStage to 0&gt;&gt;
 &lt;&lt;set $g_abzug to 0&gt;&gt;
@@ -1419,12 +1419,12 @@ Im schweren Modus startest du mit dem Minimum an Werten.
 &lt;&lt;set $startGewandtheit to 10&gt;&gt;
 &lt;&lt;set $gewandtheit to 10&gt;&gt;
 &lt;&lt;set $startStaerke to 18&gt;&gt;
-&lt;&lt;set $staerke to 10&gt;&gt;
+&lt;&lt;set $staerke to 18&gt;&gt;
 &lt;&lt;set $startGlueck to 10&gt;&gt;
-&lt;&lt;set $glueck to 5&gt;&gt;
+&lt;&lt;set $glueck to 10&gt;&gt;
 &lt;&lt;set $gold to 0&gt;&gt;
-&lt;&lt;set $proviant to 7&gt;&gt;
-&lt;&lt;set $gewandtheitsMalus to 2&gt;&gt;
+&lt;&lt;set $proviant to 10&gt;&gt;
+&lt;&lt;set $gewandtheitsMalus to 0&gt;&gt;
 &lt;&lt;set $spezialtrank to undefined&gt;&gt;
 
 &lt;&lt;set setup.items = {
@@ -1454,11 +1454,11 @@ Im schweren Modus startest du mit dem Minimum an Werten.
 &lt;&lt;run $inventar.pushUnique(&quot;schwert&quot;)&gt;&gt;
 &lt;&lt;run $inventar.pushUnique(&quot;talisman&quot;)&gt;&gt;
 
-
+/*
 &lt;&lt;run $inventar.pushUnique(&quot;rubin&quot;)&gt;&gt;
 &lt;&lt;run $inventar.pushUnique(&quot;dunst&quot;)&gt;&gt;
 &lt;&lt;run $inventar.pushUnique(&quot;scroll&quot;)&gt;&gt;
-/*
+
 &lt;&lt;run $inventar.pushUnique(&quot;speer&quot;)&gt;&gt;
 */</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="625,275" size="100,100">&lt;div class=&quot;p-header&quot;&gt;
 ╔╦╗┌─┐┬─┐  ╔╦╗┌─┐┬  ┬┌─┐┌┬┐┌─┐┌┐┌  ┌┬┐┌─┐┌─┐  ╔╦╗┌─┐┌┬┐┌─┐┌─┐
